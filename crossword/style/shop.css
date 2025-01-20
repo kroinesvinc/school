@@ -1,0 +1,252 @@
+/* App Items Katalog Elemente */
+
+.shop{
+ background-color: #ECECEC;
+ box-shadow: inset 0 0 3px #B2B2B2;
+ -moz-box-shadow: inset 0 0 3px #b2b2b2;
+ -webkit-box-shadow: inset 0 0 3px #B2B2B2;
+}
+
+.shopItem{
+ margin-left:10px;
+ margin-bottom:10px;
+
+ -webkit-border-radius:15px;
+ -moz-border-radius:15px;
+ border-radius:15px;
+ user-select:none;
+
+ overflow:hidden;
+ float:left;
+ width:170px;
+ height:150px;
+ border:1px solid #E3E3E3;
+ position:relative;
+ font-size: 14px;
+ font-family: arial,sans-serif;
+
+ -webkit-box-shadow:0px 0px 5px #F3F3F3;
+ -moz-box-shadow:0px 0px 5px #F3F3F3;
+ box-shadow:0px 0px 5px #F3F3F3;
+ background:white;
+}
+.shopItem.unselectable {
+  opacity:0.5;
+}
+.shopItem.selected:after,
+.shopItem.unselectable:after {
+  content:"✓";
+  font-size:300%;
+  position:absolute;
+  top:-5px;
+  right:-5px;
+  z-index:2;
+  padding:8px;
+  background:white;
+  border-bottom-left-radius:10px;
+}
+.shopItemPreview {
+  position:absolute;
+  left:0;
+  top:0;
+  padding:5px;
+}
+.shopItemPreview .fa {
+  color:#aaa;
+}
+.shopItemPreview:hover .fa {
+  color:blue;
+}
+
+.shopItem.isInClass{
+  border-color:#ffdd7f;
+}
+
+.shopItem_:hover{
+ -webkit-box-shadow:0px 2px 5px #CCC;
+ -moz-box-shadow:0px 2px 5px #CCC;
+ box-shadow:0px 2px 5px #CCC;
+}
+.bookmarkBorder{
+ border-style:dashed;
+}
+.solvedBorder {
+ border: 4px solid #75AA75 !important;
+}
+
+.shopItemIcon {
+ position: absolute;
+ bottom: 6px;
+ right: 6px;
+}
+ 
+.solvedCheckmark {
+ position: absolute;
+ top: 0px;
+ right: 5px;
+ font-size: 40px;
+ z-index: 1;
+ color: #75AA75;
+}
+
+.notsolvedBorder {
+ border: 4px solid gray !important;
+}
+
+.shopIteminner{
+ width:140px;
+ padding:15px;
+ position:absolute;
+ height:130px;
+}
+.shopIteminner2:hover{background:#fff9b3}
+.shopIteminner2{
+ -webkit-border-radius:15px;
+ -moz-border-radius:15px;
+ border-radius:15px;
+
+ display:none;
+ padding:15px;
+ padding-right:5px;
+ padding-bottom:5px;
+ position:absolute;
+ filter: alpha(opacity=0);
+ opacity: 0.0;
+ height:130px;
+ cursor: pointer;
+}
+.shopItemInnerData{ 
+ display:none;
+ opacity: 0.0;
+}
+.shopItemimage{
+ width:100%;
+ width:140px;
+ height:92px;
+ margin-bottom:3px;
+ color:#4191dc;
+/* text-shadow: 2px 2px white,-2px -2px white,-2px 2px white,2px -2px white, 2px 2px 10px gray; */
+}
+.shopItemCornerImage{
+ position:absolute;
+ top:12px;
+ right:12px;
+ width:32px;
+ border-radius:4px;
+ box-shadow:0px 0px 3px rgba(0,0,0,0.2);
+}
+
+.shopFolderColor1 .shopItemimage {
+
+}
+.shopFolderColor2 .shopItemimage {
+ color:#2f96b4;
+}
+.shopFolderColor3 .shopItemimage {
+ color:#51a351;
+}
+.shopFolderColor4 .shopItemimage {
+ color:#bd362f;
+}
+.shopFolderColor5 .shopItemimage {
+ color:#9c27b0;
+}
+.shopFolderColor6 .shopItemimage {
+ color:#6b6b6b;
+}
+.shopFolderColor7 .shopItemimage {
+ color:#CCCCCC;
+}
+.shopFolderColor8 .shopItemimage {
+ color:#f4b02d;
+}
+.shopFolderColor9 .shopItemimage {
+ color:#64cc4f;
+}
+.shopFolderColor10 .shopItemimage {
+ color:#4fccba;
+}
+.shopFolderColor11 .shopItemimage {
+ color:#cc4fb3;
+}
+.shopFolderColor12 .shopItemimage {
+ color:#333333;
+}
+
+.collectionImageWrapper {
+ height:auto;
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: row;
+ align-items: center;
+ justify-content: flex-start;
+ margin-bottom:3px;
+}
+
+.collectionAppImage {
+ display:flex;
+ width:52px;
+ height:35px;
+ background: white;
+ margin:3px;
+ border-radius:4px;
+ text-align:center;
+ align-items: center;
+ justify-content: center;
+ border:1px solid #eee;
+ font-size: 20px;
+ color: #999;
+}
+.collectionAppImage.empty {
+ background: transparent;
+ border-color: transparent;
+}
+
+
+
+.shopFolderItem.classFolderItem .shopItemimage {
+ color:#F9D982;
+}
+
+.shopItemtextShort{
+ text-overflow:ellipsis;
+ overflow:hidden;
+ font-size: 12px;
+ font-weight: bold;
+ color: #262626;
+ width:130px;
+ max-height:30px;
+ text-align:center;
+}
+.shopItemtextLong{
+ text-overflow:ellipsis;
+ word-wrap: break-word;
+ overflow:hidden;
+ font-size: 14px;
+ font-weight: bold;
+ color: #262626;
+ width:120px;
+ max-height:50px;
+}
+.shopItemContent{
+ word-wrap: break-word;
+ margin-top:5px;
+ font-size: 12px;
+ color: #666;
+ font-weight: normal; 
+ width: 150px;
+}
+
+.shopItemButton{
+ float:left;
+ margin-right:2px;
+}
+.shopItemButton a {
+ border:1px solid #E3E3E3;
+ padding:3px;
+ display:block;
+ float:left;
+}
+.shopItemButton:hover{
+ background:white;
+}
